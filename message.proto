@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb;
+
+message Payload {
+    bytes payload = 1;
+    string origin = 2;
+}
+
+message Message {
+    Payload payload = 1;
+    repeated string path = 2;
+}
